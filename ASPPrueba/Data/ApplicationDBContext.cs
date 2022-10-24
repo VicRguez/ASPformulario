@@ -9,6 +9,7 @@ namespace ASPPrueba.Data
         {
 
         }
-        public DbSet<Category>categories { get; set; }  
+        public DbSet<Category>categories { get; set; }
+        public DbSet<Pregunta> preguntas { get; set; }
     }
 }
