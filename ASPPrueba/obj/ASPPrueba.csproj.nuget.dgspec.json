@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\ASPPrueba.csproj": {}
+    "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\ASPPrueba.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\ASPPrueba.csproj": {
+    "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\ASPPrueba.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\ASPPrueba.csproj",
+        "projectUniqueName": "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\ASPPrueba.csproj",
         "projectName": "ASPPrueba",
-        "projectPath": "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\ASPPrueba.csproj",
-        "packagesPath": "C:\\Users\\Victoria.Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\obj\\",
+        "projectPath": "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\ASPPrueba.csproj",
+        "packagesPath": "C:\\Users\\Manuel.Puerto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Victoria.Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Manuel.Puerto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
