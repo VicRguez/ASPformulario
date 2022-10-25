@@ -1,0 +1,24 @@
+﻿@model Pregunta
+@{
+    ViewData["Title"] = "PrimeraPregunta";
+}
+<div>
+    <h1> Esta es la primera pregunta</h1>
+</div>
+
+<table>
+    <tbody>
+        
+        <tr>
+            <td>
+                @Model.Titulo
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Model.TextoPregunta
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
