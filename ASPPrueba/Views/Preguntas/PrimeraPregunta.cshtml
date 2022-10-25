@@ -1,4 +1,4 @@
-﻿@model Pregunta
+﻿@model PreguntaRespuesta
 @{
     ViewData["Title"] = "PrimeraPregunta";
 }
@@ -11,14 +11,28 @@
         
         <tr>
             <td>
-                @Model.Titulo
+                @Model.pregunta.Titulo
             </td>
         </tr>
         <tr>
             <td>
-                @Model.TextoPregunta
+                @Model.pregunta.TextoPregunta
             </td>
         </tr>
+
+
+
         
     </tbody>
 </table>
+
+<form method="post">
+	
+	<div>
+        <input asp-for="textoRespuesta" />
+
+	</div>
+
+    <button type="submit" asp-controller="Pregunta" asp-action="Create">Create</button>
+	
+</form>

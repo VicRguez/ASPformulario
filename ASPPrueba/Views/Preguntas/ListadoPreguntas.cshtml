@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Pregunta>
+﻿@model IEnumerable<Pregunta> 
 @{
     ViewData["Title"] = "ListadoPreguntas";
 }
@@ -41,7 +41,7 @@
                 </td>
                 <td>
                     <div role="group">
-                        <a asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a asp-controller="Pregunta" asp-action="Create" asp-route-id="@item.Id">Edit</a>
                     </div>
                     <div role="group">
                         <a asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id">Delete</a>

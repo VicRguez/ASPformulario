@@ -3,6 +3,7 @@
 using ASPPrueba.Data;
 using ASPPrueba.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Drawing;
 using System.Linq;
 
 public class PreguntasController : Controller
@@ -21,7 +22,7 @@ public class PreguntasController : Controller
         return View(objPreguntasList);
     }
 
-    public IActionResult PrimeraPregunta()
+    public IActionResult PrimeraPregunta(PreguntaRespuesta obj)
     {
         IEnumerable<Pregunta> objPreguntasList = _db.preguntas;
 
@@ -29,11 +30,35 @@ public class PreguntasController : Controller
 
         Pregunta primeraPregunta =  asList.ElementAt(0);
 
-   
+        obj.pregunta = primeraPregunta;
 
-        return View(primeraPregunta);
+      
+
+        return View( obj);
     }
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Create(PreguntaRespuesta respuesta)
+    {
+        Console.WriteLine("\n\n\n\n\n\n\n\n\n\nentrando en post\n\n\n\n\n\n");
+        if (ModelState.IsValid)
+        {
+            
 
+
+            _db.respuestas.Add(new Respuesta
+            { 
+                Pregunta=respuesta.pregunta,
+                TextoRespuesta = respuesta.textoRespuesta,
+                
+                
+
+            });
+            _db.SaveChanges();
+            return RedirectToAction("ListadoPreguntas");
+        }
+        return View("ListadoPreguntas");
+    }
 
 
 }
