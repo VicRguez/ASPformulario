@@ -1,3 +1,4 @@
+//Añadir tablas
 Para poder añadir una tabla necesitamos un dbContext.
 
 Se crea el modelo
@@ -6,4 +7,8 @@ Se crea un DbSet
 
 Se escribe en el Package manager Console: add-migration [nombre de la migracion] --> esto es para crear la tabla
 Se escribe en el Package manager Console: Update-Database --> para actualizar la base de datos
+
+
+//Troshouting (errores comunes)
+El sql manager no actualiza cuando le das a refresh, tienes que cerrar y despues abrir para ver los cambios.
 

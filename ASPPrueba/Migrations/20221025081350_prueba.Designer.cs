@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASPPrueba.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20221024102039_addPreguntastabla")]
-    partial class addPreguntastabla
+    [Migration("20221025081350_prueba")]
+    partial class prueba
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -74,6 +74,39 @@ namespace ASPPrueba.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("preguntas");
+                });
+
+            modelBuilder.Entity("ASPPrueba.Models.Respuesta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("PreguntaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TextoRespuesta")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PreguntaId");
+
+                    b.ToTable("respuestas");
+                });
+
+            modelBuilder.Entity("ASPPrueba.Models.Respuesta", b =>
+                {
+                    b.HasOne("ASPPrueba.Models.Pregunta", "Pregunta")
+                        .WithMany()
+                        .HasForeignKey("PreguntaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pregunta");
                 });
 #pragma warning restore 612, 618
         }

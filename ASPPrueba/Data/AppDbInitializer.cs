@@ -14,7 +14,7 @@ namespace ASPPrueba.Data
 
                 context.Database.EnsureCreated();
 
-                if (context.preguntas.Any())
+                if (!context.preguntas.Any())
                 {
                     context.preguntas.AddRange(new List<Pregunta>()
                     {

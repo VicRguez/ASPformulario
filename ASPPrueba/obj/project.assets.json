@@ -9850,19 +9850,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manuel.Puerto\\.nuget\\packages\\": {}
+    "C:\\Users\\Victoria.Rodriguez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\ASPPrueba.csproj",
+      "projectUniqueName": "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\ASPPrueba.csproj",
       "projectName": "ASPPrueba",
-      "projectPath": "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\ASPPrueba.csproj",
-      "packagesPath": "C:\\Users\\Manuel.Puerto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manuel.Puerto\\OneDrive - Solera Holdings, Inc\\Desktop\\ASP .NET FORMULARIO\\ASPformulario\\ASPPrueba\\obj\\",
+      "projectPath": "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\ASPPrueba.csproj",
+      "packagesPath": "C:\\Users\\Victoria.Rodriguez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Manuel.Puerto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Victoria.Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9926,8 +9926,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Victoria.Rodriguez\\source\\repos\\ASPPrueba\\ASPPrueba\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
