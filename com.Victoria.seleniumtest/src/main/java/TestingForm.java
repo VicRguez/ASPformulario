@@ -17,12 +17,12 @@ public class TestingForm {
 		
 		driver.get("https://localhost:7211/");
 		
-		driver.findElement(By.id("L2AGLb"))
+		driver.findElement(By.xpath("/html/body/header/nav/div/div/ul/li[4]/a"))
 		.click();
 		
-		/*
-		 * /html/body/header/nav/div/div/ul/li[4]/a
-		 */
+		/*// Enter your login email id
+        driver.findElement(By.id("email"))
+            .sendKeys("xykjhkz@gmail.com");*/
 	}
 
 }
